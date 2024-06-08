@@ -8,6 +8,7 @@ coloque nas sessões indicadas*/
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #000;
+   --cor-de-link: #fff;
 }
 
 body {
@@ -43,6 +44,7 @@ https://en.bem.info/methodology/quick-start/*/
 section.menu {
     margin: 2%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     text-align: left;
@@ -52,29 +54,21 @@ section.menu {
     font-style: normal;
 }
 
-section.menu .menu {
-    display: flex;
-    justify-content: space-around;
-}
-
-section.menu .menu__title {
+.menu__title {
     font-family: "Volkhov", serif;
     font-weight: 700;
     font-style: normal;
 }
 
-section.menu .header_menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.menu_header {
     gap: 15px;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal;
     font-style: normal;
 }
 
-section.menu .menu__list {
+.menu__list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -87,126 +81,95 @@ section.menu .menu__list {
     color: white;
 }
 
-section.menu .correo {
+.menu__list__correo {
     color:#2874A6;
+}
+
+.menu a:hover {
+    transition: 0.4s;
+    color: #3cb371;
 }
 
 /*Sección Title*/
 
 section.title {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: 0;
-    padding: 5% 5% 5% 5%;
+    padding: 5%;
     color: white;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-section.title .title__div {
+.title__div {
     display: flex;
     flex-flow: row-reverse;
     align-content: center;
     gap: 5px;
 }
 
-section.title .title__profile {
-    display: flex;
-    width: 400px;
+.title__profile {
+    width: 100%;
+    max-width: 400px;
     border-radius: 50px;
 }
 
-section.title .title__container {
+.title__container {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     text-align: left;
     margin: 20px;
-    border-radius: 10%;
 }
 
-section.title .title__bio {
-    display: flex;
-    flex-flow: column;
+.title__bio {
     color: white;
     font-size: 3.6em;
     margin: 20px;
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: bold;
     font-style: normal;
 }
 
-section.title .title__subsection {
-    display: flex;
-    flex-flow: column;
+.title__subsection {
     margin: 20px;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: bold;
     font-style: normal;
     font-size: 1.5em;
 }
 
-section.title .title__network {
+.title__network {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     gap: 15px;
     text-align: left;
     padding: 0%;
     margin: 20px;
     color:#2874A6;
-}
-
-.title__network {
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal;
     font-style: normal;
 }
 
-/*Sección About*/
-
-section.about{
-    display: flex;
-    justify-content: center;
-    background: #154360;
-    box-shadow: 70px 0px 70px 0px #154360;
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-    color: white;
-    padding: 2% 5% 4% 5%;
-    margin: 1% 0% 2% 0%;
-}
-
-section.about .about__title {
-    text-align: center;
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 2em;
-    color: white;
-}
-
-section.about .about__paragraph {
+.title_about__paragraph {
+    width: 100%;
+    max-width: 700px;
+    font-size: .9em;
     text-align: justify;
-    font-size: 1.3em;
-    color: white;
-    padding: 0% 5% 0% 5%;
 }
 
-.one {
-    color:#3cb371;
-    font-weight: bold;
-}
-
-.alura {
-    color:#3cb371;
-    font-weight: bold;
+.title__network__item a:hover {
+    transition: 0.4s;
+    color: #3cb371;
 }
 
 /*Seccion skills*/
@@ -216,23 +179,25 @@ section.skills {
     font-optical-sizing: auto;
     font-style: normal;
     width: 100%;
-    padding: 2% 0% 2% 0%;
+    padding: 2% 0% 4% 0%;
 }
 
-section.skills .skills__title {
+.skills__title {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     color: white;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: bold;
     font-style: normal;
-    padding: 5% 0% 0% 0%;
+    margin: 0;
+    padding: 30px 0px 30px 0px;
 }
 
-section.skills .skills__line {
+.skills__line {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     color: white;
@@ -240,35 +205,35 @@ section.skills .skills__line {
     font-style:normal;
 }
 
-section.skills .skills__box {
-    width: 300px;
+.skills__box {
+    width: 100%;
+    max-width: 600px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid #2874A6;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 1% 3% 0% 0%;
 }
 
-section.skills .skills__name {
-    display: flex;
-    justify-content: center;
-    margin: 10% 10% 10% 10%;
-    font-size: 20px;
+.skills__name {
+    text-align: center;
+    margin: 10%;
+    font-size: 15px;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal;
     font-style: normal;
 }
 
 .skills__img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Experiencia Académica*/
+/* Formación Académica*/
 
 section.academic {
     color: white;
@@ -277,48 +242,49 @@ section.academic {
     font-optical-sizing: auto;
     font-style: normal;
     padding: 0% 0% 2% 0%;
+    box-shadow: 70px 0px 70px 0px #154360;
 }
 
-section.academic .academic__title{
+.academic__title{
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 5% 0% 0% 0%;
+    padding: 5% 0% 3% 0%;
 }
 
-section.academic .academic__courses{
+.academic__courses{
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-section.academic .academic__courses__list {
-    padding: 3% 3% 3% 3%;
+.academic__courses__list {
+    padding: 3%;
 }
 
-section.academic .academic__courses__box {
+.academic__courses__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 230px;
-    border: 3px solid #2874A6;
-    padding: 0% 4% 0% 4%;
 }
 
-section.academic .academic__courses__item__img {
+.academic__courses__item__img {
     width: 100%;
-    display: flex;
-    align-items: center;
 }
 
-section.academic .academic__courses__item__title {
+.academic__courses__item__title {
     text-align: center;
 }
 
-section.academic .academic__courses__item__subtitle{
+.academic__courses__item__subtitle{
     color: #3cb371;
     text-align: center;
 }
@@ -327,81 +293,70 @@ section.academic .academic__courses__item__subtitle{
 
 section.experience{
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: flex-start;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-section.experience .experience__section__title {
+.experience__section__title {
     color: white;
     text-align: center;
     padding: 5% 0% 0% 0%;
-    font-size: 2em;
+    font-size: 3em;
 }
 
-section.experience .experience__box {
+.experience__box {
     gap: 30px;
     margin: 5%;
     padding: 0% 0% 0% 5%;
     font-size: 1em;
 }
 
-.uno {
+.experience_uno, .experience_tres {
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     gap: 15px;
 }
 
-.dos {
+.experience_dos, .experience_cuatro {
     display: flex;
-    flex-flow: row-reverse;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     align-items: center;
     gap: 15px;
 }
 
-.tres {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 15px;
+.experience__img {
+    width: 100%;
+    max-width: 700px;
 }
 
-.cuatro {
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    gap: 15px;
-}
-
-section.experience .experience__img {
-    width: 700px;
-}
-
-section.experience .experience__title {
+.experience__title {
     color: white;
-    color: #2874A6;
 }
 
-section.experience .experience__info {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.experience__info {
+    text-align: center;
+}
+
+.experience__description a::first-letter {
+    transition: 0.5s;
+    color: #3cb371;
 }
 
 .experiencia__botao--repo {
-    width: 200px;
+    border:solid 5px #2874A6;
+    width: 150px;
     height: 50px;
 }
 
 .experience__botao--demo {
-    width: 200px;
+    border:solid 5px #2874A6;
+    width: 150px;
     height: 50px;
 }
 
@@ -409,7 +364,7 @@ section.experience .experience__info {
 
 section.formcontacto {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
     color: white;
     text-align: center;
@@ -418,46 +373,51 @@ section.formcontacto {
     font-style: normal;
 }
 
-section.formcontacto .formcontato__contacto {
+.formcontacto__contacto {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
 }
 
-section.formcontacto .formcontato__text {
+.formcontacto__text {
     color: white;
+    box-shadow: 70px 0px 70px 0px #154360;
+    padding: 2% 0% 4% 0%;
 }
 
-section.formcontacto .formcontato__title {
+.formcontacto__title {
     font-size: 2em;
 }
 
-section.formcontacto .formcontato__form {
+.formcontacto__form {
     width: 100%;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-section.formcontacto .formcontato__input {
-    display: flex;
-    justify-content: flex-end;
+.formcontacto__input {
     width: 200px;
     height: 30px;
 }
 
-.formcontato__textarea {
+.formcontacto__textarea {
     width: 300px;
     height: 80px;
+}
+
+.formcontacto_enviar {
+    background-color: #2874A6;
 }
 
 /*footeer*/
 
 section.footer{
    color: white;
+   padding: 3%;
 }
 
-.fecha {
+.footer_fecha {
     color: #3cb371;
 }
 
@@ -467,66 +427,166 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
 
-@media (min-width: 768px) {
+@media (max-width:768px) {
+    .title__profile {
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+    }
 
-    /* Menú */
-
-    /*title*/
-
-    /*about*/
-
-    /* Experiencia profesional*/
-
-    section.about .about {
+    .title__div {
         display: flex;
-        width: auto;
-        margin: 0%;
-        padding: 0%;
-        font-family: "Source Code Pro", monospace;
-        font-optical-sizing: auto;
-        font-style: normal;
+        flex-flow: row-reverse;
+        align-items: center;
     }
 
-    section.about .about__container {
-        width: auto;
-        margin: 0%;
-        padding: 0%;
-        font-family: "Source Code Pro", monospace;
-        font-optical-sizing: auto;
-        font-style: normal;
+    .title_about__paragraph {
+        width: 100%;
+        max-width: 700px;
     }
 
-    /* Title */
+    .title__network {
+        margin: 10px;
+    }
 
-    /*Skills*/
+    .skills__line {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-    /*Hobbies*/
+    section.skills .skills__box {
+        width: 300px;
+    }
 
-    /*Formación Académica*/
+    section.menu {
+        flex-direction: column;
+        text-align: center;
+    }
 
-    /*Experiencia Profesional*/
+    section.title {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0% 1% 0% 1%;
+    }
 
+    .title__container {
+        text-align: center;
+    }
+
+    .title__profile {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .section.academic {
+        box-shadow: none;
+    }
+
+    .experience__box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience_uno, .experience_dos, .experience_tres, .experience_cuatro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience__title {
+        font-size: 1.4em;
+    }
+
+    .experiencia__botao--repo,
+    .experience__botao--demo {
+        width: 80px;
+        height: 30px;
+    }
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width:424px) {
+    section.menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+    }
 
-/*Menu*/
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .9em;
+        padding: 0%;
+        margin: 0%;
+    }
 
-/*Titulo*/
+    .title__div {
+        display: flex;
+        flex-direction: column;
+    }
 
-/*Sección sobre mi*/
+    .title__profile {
+        width: 100%;
+        max-width: 150px;
+        height: 200px;
+    }
 
-/*Skills*/
+    .title__container {
+        flex-direction: column;
+    }
 
-/*Hobbies*/
- 
-/*Formación Académica*/
+    .title__bio {
+        font-size: 2em;
+        text-align: center;
+    }
 
-/*Experiencia Profesional*/
+    .title__subsection {
+        font-size: 1.2em;
+        text-align: center;
+    }
 
- /*Contacto*/
+    .title_about__paragraph {
+        font-size: 0.8em;
+    }
 
-/*Footer*/
+    .title__network {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills__title, .academic__title, .experience__section__title {
+        font-size: 2em;
+    }
+
+    .skills__line, .academic__courses {
+        flex-direction: column;
+    }
+
+    .experience__box {
+        margin: 2%;
+        padding: 0;
+    }
+
+    .experience_uno, .experience_tres, .experience_dos, .experience_cuatro {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .experience__img {
+        max-width: 100%;
+    }
+
+    .formcontacto__input, .formcontacto__textarea {
+        width: 100%;
+    }
+
+    .formcontacto__form {
+        gap: 10px;
+    }
 
 }

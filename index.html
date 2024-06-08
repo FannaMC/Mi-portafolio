@@ -19,16 +19,15 @@
         <!-- Sección del Menú  -->
         <div class="tudo">
             <section class="menu">
-                <header class="header_menu">
+                <header class="menu_header">
                     <h3 class="menu__title">Mi portafolio</h3>
                 </header>
                 <nav>
                     <ul class="menu__list">
-                        <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
                         <li class="menu__list__item"><a href="#skills">Skills</a></li>
                         <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                         <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                        <li class="menu__list__item"><a href="#contacto" class="correo">estefania.mc.1719@gmail.com</a></li>
+                        <li class="menu__list__item"><a href="#contacto" class="menu__list__correo">estefania.mc.1719@gmail.com</a></li>
                     </ul>
                 </nav>
             </section>
@@ -40,23 +39,15 @@
                 <img class="title__profile" src="assets\Fanna.jpg">
                 <div class="title__container">
                     <h2 class="title__bio">Estefanía Muñoz Colorado</h2>
-                    <h3 class="title__subsection">FRONT END DEVELOPER</h3>
+                    <h3 class="title__subsection">FRONT-END DEVELOPER</h3>
                     <ul class="title__network">
                         <!-- Pon los enlaces de tus redes sociales favoritas -->
                         <li class="title__network__item"><a href="https://github.com/FannaMC">Github <img src="assets\arrow.png"> </a></li>
                         <li class="title__network__item"><a href="https://www.linkedin.com/in/estefaniamc/">Linkedin <img src="assets\arrow.png"></a></li>
                         <li class="title__network__item"><a href="https://www.instagram.com/fannamc?igsh=MW9mYmZpcjVuMnR1cA==">Instagram <img src="assets\arrow.png"></a></li>
                     </ul>
+                    <p class="title_about__paragraph"> Hola, soy licenciada en Biología, actualmente estoy participando en el programa Oracle ONE en Alura Latam, mi camino en el desarrollo web front end esta comenzando pero voy por buen camino con pasos sólidos y firmes. Mi experiencia mejora día con día aplicando mi conocimiento en diferentes proyectos y aprendiendo nuevas tecnologías, deseo crear sitios web personalizados, inclusivos y creativos.</p>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Sección sobre mi -->
-        <section class="about" id="sobre-mi">
-            <div class="about__container">
-                <h3 class="about__title">Sobre mi</h3>
-                <p class="about__paragraph">Hola, soy Bióloga y actualmente estoy participando en el proyecto <span class="one"> Oracle ONE</span> en <span class="alura"> Alura Latam</span>, mi camino en el desarrollo web front end esta comenzando pero voy por buen camino con pasos sólidos y firmes. Mi experiencia mejora día con día aplicando mi conocimiento en diferentes proyectos y aprendiendo nuevas tecnologías, deseo crear sitios web personalizados, inclusivos y creativos. </p>
-                <!-- Si quieres, pon tú firma acá! -->
             </div>
         </section>
 
@@ -74,7 +65,7 @@
                     <div class="skills__box">
                         <ul>
                             <li> <img class="skills__img" src="assets\jsc.jpg" alt=""></li>
-                            <li class="skills__name">Javascript</li>
+                            <li class="skills__name">JavaScript</li>
                         </ul>
                     </div>
 
@@ -82,6 +73,13 @@
                         <ul>
                             <li> <img class="skills__img" src="assets\css3.jpg" alt=""> </li>
                             <li class="skills__name">CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li> <img class="skills__img" src="assets\react.png" alt=""> </li>
+                            <li class="skills__name">React</li>
                         </ul>
                     </div>
             </div>
@@ -101,14 +99,6 @@
                 </div>
                 <div class="academic__courses__box">
                     <ul class="academic__courses__list">
-                        <!--Pon el logotipo de la institución de formación -->
-                        <li><img src="assets\ude.jpg" class="academic__courses__item__img"></li>
-                        <li class="academic__courses__item__title"><h4>Programador web: HTML y CSS</h4></li>
-                        <li class="academic__courses__item__subtitle"><p>2023 - Udemy</p></li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
                         <!-- Pon el logotipo de la institución de formación -->
                         <li><img src="assets\one.jpg" class="academic__courses__item__img"></li>
                         <li class="academic__courses__item__title"><h4>Ruta front end - Oracle + Alura Latam</h4></li>
@@ -120,9 +110,9 @@
 
         <!-- Sección de Experiencia Profesional/Proyectos-->
         <section class="experience" id="xp">
-            <h2 class="experience__section__title" >Experiencia Profesional</h2>
+            <h2 class="experience__section__title" >Proyectos</h2>
             <div class="experience__box">
-                <div class="uno">
+                <div class="experience_uno">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                     <img class="experience__img" src="assets\portafolio.png">
                     <div class="experience__info">
@@ -137,44 +127,44 @@
             </div> 
      
             <div class="experience__box">
-                <div class="dos">
+                <div class="experience_dos">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                     <img class="experience__img" src="assets\juego.png">
                     <div class="experience__info">
                         <h2 class="experience__title">Juego secreto</h2>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://fannamc.github.io/JuegoSecreto2024/"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/FannaMC/JuegoSecreto2024"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                            <span class="experience__demo"><a href="https://fannamc.github.io/JuegoSecreto2024/"><button class="experience__botao--demo">Ver demo</button></a></span>
                         </div>
                     </div>
                 </div>
             </div>  
 
             <div class="experience__box">
-                <div class="tres">
+                <div class="experience_tres">
                         <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                     <img class="experience__img" src="assets\barberia.png">
                     <div class="experience__info">
                         <h2 class="experience__title">Página de una barbería</h2>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://fannamc.github.io/Barberia-Alura/"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/FannaMC/Barberia-Alura"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                            <span class="experience__demo"><a href="https://fannamc.github.io/Barberia-Alura/"><button class="experience__botao--demo">Ver demo</button></a></span>
                         </div>
                     </div>
                 </div> 
             </div> 
 
             <div class="experience__box">
-                <div class="cuatro">
+                <div class="experience_cuatro">
                     <img class="experience__img" src="assets\corazon.png">
                     <div class="experience__info">
                         <h2 class="experience__title">Proyecto personal</h2>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://fannamc.github.io/Regalo14/"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/FannaMC/Regalo14"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                            <span class="experience__demo"><a href="https://fannamc.github.io/Regalo14/"><button class="experience__botao--demo">Ver demo</button></a></span>
                         </div>
                     </div>
                 </div>
@@ -184,27 +174,27 @@
 
         <!-- Sección de Contacto -->
         <section class="formcontacto" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
+            <div  class="formcontacto__contacto">
+                <div class="formcontacto__text">
+                    <h2 class="formcontacto__title">Contacto</h2>
+                    <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
+                    <h3 class="formcontacto__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                    <form class="formcontacto__form" name="form">
                         <label for="nombre" class="nombre">Nombre y apellido</label><input class="formcontato__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
                         <label for="email" class="correo">Correo alectrónico</label><input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail">
                         <label for="asunto" class="asunto">Asunto</label><input class="formcontato__input" type="text" id="asunto" name="asunto" placeholder="Asunto">
                         <label for="mensaje"><textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea></label>
-                        <input class="enviar" type="submit" value="Enviar mensaje" fdprocessedid="edhlon">
+                        <input class="formcontacto_enviar" type="submit" value="Enviar mensaje" fdprocessedid="edhlon">
                     </form>
                 </div>
             </div>
-        </section>
+        </section>    
 
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="footer__rodape">
                 <p>Desarrollado por Estefania Muñoz Colorado</p>
-                <p class="fecha">2024</p>
+                <p class="footer_fecha">2024</p>
             </div>
         </section>
         <!-- Script del documento JavaScript -->
